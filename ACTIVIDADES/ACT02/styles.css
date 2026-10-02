@@ -1,0 +1,85 @@
+/* ============================================
+   ACTIVITAT 2: ESTILITZACIÓ AMB CSS
+   Nom: 
+   Restaurant: 
+   ============================================ */
+
+/* ============================================
+   VARIABLES CSS
+   Defineix aquí totes les teves variables
+   ============================================ */
+
+:root {
+  /* Afegeix aquí les teves variables CSS */
+  /* Colors principals (exemple de com crear les variables) */
+  --primary-color: #______;      /* Color principal del restaurant */
+  --secondary-color: #______;    /* Color secundari (botons, accents) */
+  --accent-color: #______;       /* Color d'accent (links, highlights) */
+}
+
+
+/* ============================================
+   RESET I ESTILS GENERALS
+   ============================================ */
+
+/* Afegeix aquí el reset bàsic i estils del body */
+
+
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
+    /*Exemple de com fer anar les variables*/
+   h1{ 
+    color: var(--primary-color);
+   }
+
+/* Afegeix aquí els estils per h1, h2, h3, p, etc. */
+
+
+/* ============================================
+   NAVEGACIÓ
+   ============================================ */
+
+/* Afegeix aquí els estils del header i nav */
+
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+/* Afegeix aquí els estils de la secció hero */
+
+
+/* ============================================
+   BOTONS
+   ============================================ */
+
+/* Afegeix aquí els estils dels botons */
+
+
+/* ============================================
+   SECCIÓ SOBRE NOSALTRES
+   ============================================ */
+
+/* Afegeix aquí els estils de .about */
+
+
+/* ============================================
+   DESTACATS DEL MENÚ
+   ============================================ */
+
+/* Afegeix aquí els estils de .menu-highlight i .dish-card */
+
+
+/* ============================================
+   FORMULARI DE RESERVA
+   ============================================ */
+
+/* Afegeix aquí els estils del formulari */
+
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+/* Afegeix aquí els estils del footer */

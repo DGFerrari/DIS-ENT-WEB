@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nom del teu restaurant]</title>
+    <!-- Google Fonts aquí -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER amb navegació -->
+    <header>
+        <nav>
+            <div class="logo">[Nom Restaurant]</div>
+            <ul class="nav-menu">
+                <li><a href="#inici">Inici</a></li>
+                <li><a href="#sobre-nosaltres">Sobre nosaltres</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inici" class="hero">
+        <h1>[Slogan del restaurant]</h1>
+        <p>[Descripció breu]</p>
+        <a href="#reserva" class="btn-primary">Reserva ara</a>
+    </section>
+
+    <!-- SOBRE NOSALTRES -->
+    <section id="sobre-nosaltres" class="about">
+        <h2>Sobre nosaltres</h2>
+        <p>[Text sobre la història/filosofia del restaurant]</p>
+    </section>
+
+    <!-- DESTACATS DEL MENÚ -->
+    <section id="menu" class="menu-highlight">
+        <h2>Els nostres plats</h2>
+        <div class="dishes">
+            <div class="dish-card">
+                <h3>[Nom plat 1]</h3>
+                <p>[Descripció]</p>
+                <span class="price">[Preu]€</span>
+            </div>
+            <div class="dish-card">
+                <h3>[Nom plat 2]</h3>
+                <p>[Descripció]</p>
+                <span class="price">[Preu]€</span>
+            </div>
+            <div class="dish-card">
+                <h3>[Nom plat 3]</h3>
+                <p>[Descripció]</p>
+                <span class="price">[Preu]€</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARI DE RESERVA -->
+    <section id="reserva" class="reservation">
+        <h2>Reserva la teva taula</h2>
+        <form>
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Data</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Hora</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="guests">Número de persones</label>
+            <select id="guests" name="guests">
+                <option value="1">1 persona</option>
+                <option value="2">2 persones</option>
+                <option value="3">3 persones</option>
+                <option value="4">4 persones</option>
+                <option value="5">5+ persones</option>
+            </select>
+            
+            <button type="submit" class="btn-primary">Confirmar reserva</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 [Nom Restaurant]. Tots els drets reservats.</p>
+        <p>Adreça: [Carrer fictici] | Tel: [Telèfon fictici]</p>
+    </footer>
+</body>
+</html>
