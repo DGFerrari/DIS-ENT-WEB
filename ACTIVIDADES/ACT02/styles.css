@@ -1,7 +1,7 @@
 /* ============================================
    ACTIVITAT 2: ESTILITZACIÓ AMB CSS
-   Nom: 
-   Restaurant: 
+   Nom: Daniel Guedes Ferrari
+   Restaurant: Freddy Fazbear's Pizza
    ============================================ */
 
 /* ============================================
@@ -12,9 +12,9 @@
 :root {
   /* Afegeix aquí les teves variables CSS */
   /* Colors principals (exemple de com crear les variables) */
-  --primary-color: #______;      /* Color principal del restaurant */
-  --secondary-color: #______;    /* Color secundari (botons, accents) */
-  --accent-color: #______;       /* Color d'accent (links, highlights) */
+  --primary-color: #121216;      /* Color principal del restaurant */
+  --secondary-color: #2B3542;    /* Color secundari (botons, accents) */
+  --accent-color: #D32F2F;       /* Color d'accent (links, highlights) */
 }
 
 
