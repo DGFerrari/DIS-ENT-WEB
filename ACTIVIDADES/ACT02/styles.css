@@ -10,76 +10,338 @@
    ============================================ */
 
 :root {
-  /* Afegeix aquí les teves variables CSS */
-  /* Colors principals (exemple de com crear les variables) */
-  --primary-color: #121216;      /* Color principal del restaurant */
-  --secondary-color: #2B3542;    /* Color secundari (botons, accents) */
-  --accent-color: #D32F2F;       /* Color d'accent (links, highlights) */
+  --primary-color: #121216;
+  --secondary-color: #2B3542;
+  --accent-color: #D32F2F;
+  --background-color: #19191f;
+  --surface-color: #24242c;
+  --text-color: #f5f0e6;
+  --muted-color: #c5bdaf;
+  --gold-color: #f2b84b;
+  --content-width: 1100px;
 }
-
 
 /* ============================================
    RESET I ESTILS GENERALS
    ============================================ */
 
-/* Afegeix aquí el reset bàsic i estils del body */
+/* Reset bàsic i estils generals */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
 
 /* ============================================
    TIPOGRAFIA
    ============================================ */
-    /*Exemple de com fer anar les variables*/
-   h1{ 
-    color: var(--primary-color);
-   }
 
-/* Afegeix aquí els estils per h1, h2, h3, p, etc. */
+h1 {
+  color: var(--gold-color);
+  font-family: 'Fugaz One', cursive;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.15;
+}
 
+h2,
+h3 {
+  font-family: 'Carter One', cursive;
+  line-height: 1.25;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--gold-color);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
 
 /* ============================================
    NAVEGACIÓ
    ============================================ */
 
-/* Afegeix aquí els estils del header i nav */
+header {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  width: min(100% - 2rem, var(--content-width));
+  min-height: 76px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo {
+  color: #fff;
+  font-family: 'Carter One', cursive;
+  font-size: 1.25rem;
+}
+
+.nav-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  font-weight: 700;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus-visible {
+  color: var(--gold-color);
+}
 
 
 /* ============================================
    HERO SECTION
    ============================================ */
 
-/* Afegeix aquí els estils de la secció hero */
+.hero {
+  display: flex;
+  min-height: 470px;
+  padding: 5rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  width: min(100%, 800px);
+}
+
+.hero p {
+  margin: 1.5rem 0 2rem;
+  color: var(--muted-color);
+  font-size: 1.1rem;
+}
 
 
 /* ============================================
    BOTONS
    ============================================ */
 
-/* Afegeix aquí els estils dels botons */
+.btn-primary {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background-color: #a92323;
+}
+
+.btn-primary:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--gold-color);
+  outline-offset: 3px;
+}
 
 
 /* ============================================
    SECCIÓ SOBRE NOSALTRES
    ============================================ */
 
-/* Afegeix aquí els estils de .about */
+.about,
+.menu-highlight,
+.reservation {
+  width: min(100% - 2rem, var(--content-width));
+  margin: 0 auto;
+  padding: 4.5rem 0;
+}
+
+.about p {
+  max-width: 850px;
+  color: var(--muted-color);
+  font-size: 1.05rem;
+}
 
 
 /* ============================================
    DESTACATS DEL MENÚ
    ============================================ */
 
-/* Afegeix aquí els estils de .menu-highlight i .dish-card */
+.menu-highlight {
+  width: 100%;
+  max-width: none;
+  padding: 4.5rem max(1rem, calc((100% - var(--content-width)) / 2));
+  background-color: var(--primary-color);
+}
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.dish-card {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #45434a;
+  border-radius: 10px;
+  background-color: var(--surface-color);
+}
+
+.dish-card h3 {
+  margin-bottom: 1rem;
+  color: var(--gold-color);
+  font-size: 1.2rem;
+}
+
+.dish-card p {
+  margin-bottom: 1.25rem;
+  color: var(--muted-color);
+}
+
+.price {
+  margin-top: auto;
+  color: var(--gold-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
 
 /* ============================================
    FORMULARI DE RESERVA
    ============================================ */
 
-/* Afegeix aquí els estils del formulari */
+.reservation h2 {
+  text-align: center;
+}
+
+.reservation form {
+  display: grid;
+  width: min(100%, 620px);
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+}
+
+.reservation label {
+  align-self: end;
+  font-weight: 700;
+}
+
+.reservation input,
+.reservation select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #6b6870;
+  border-radius: 5px;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  font: inherit;
+}
+
+.reservation button {
+  margin-top: 0.75rem;
+  grid-column: 1 / -1;
+}
 
 
 /* ============================================
    FOOTER
    ============================================ */
 
-/* Afegeix aquí els estils del footer */
+footer {
+  padding: 1.5rem 1rem;
+  background-color: #0c0c0f;
+  color: var(--muted-color);
+  text-align: center;
+}
+
+footer p + p {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 760px) {
+  nav {
+    padding: 1rem 0;
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .dishes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    min-height: 400px;
+    padding: 4rem 1rem;
+  }
+
+  .about,
+  .reservation {
+    padding: 3.5rem 0;
+  }
+
+  .dishes,
+  .reservation form {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation button {
+    grid-column: auto;
+  }
+}
