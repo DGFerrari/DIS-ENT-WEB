@@ -1,0 +1,304 @@
+/* ============================================
+   ACTIVITAT 3: CARTA DIGITAL AMB FLEXBOX
+   ============================================ */
+
+/* ============================================
+   VARIABLES CSS
+   Copia aquí les variables de l'Activitat 2
+   ============================================ */
+
+:root {
+  
+}
+
+
+/* ============================================
+   RESET I ESTILS GENERALS
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elimina l'estil de les llistes */
+ul {
+  list-style: none;
+}
+
+/* Estil dels links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
+
+h1 {
+ 
+}
+
+h2 {
+  
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+/* ============================================
+   NAVEGACIÓ AMB FLEXBOX
+   Aplica Flexbox per organitzar logo i menu
+   ============================================ */
+
+header {
+  /* Afegeix els teus estils aquí */
+}
+
+nav {
+  /* Usa display: flex i justify-content per distribuir logo i menu */
+}
+
+.logo {
+  /* Estilitza el logo */
+}
+
+.nav-menu {
+  /* Usa display: flex per organitzar els links en fila */
+}
+
+.nav-menu li {
+  /* Espaiat entre links */
+}
+
+.nav-menu a {
+  /* Estils dels links */
+}
+
+.nav-menu a:hover {
+  /* Efecte hover */
+}
+
+
+/* ============================================
+   HERO SECTION AMB FLEXBOX
+   Usa Flexbox per centrar el contingut
+   ============================================ */
+
+.hero {
+  /* Usa display: flex i justify-content/align-items per centrar */
+}
+
+.hero h1 {
+  /* Estils del títol */
+}
+
+.hero p {
+  /* Estils del paràgraf */
+}
+
+
+/* ============================================
+   FILTRES DE CATEGORIA AMB FLEXBOX
+   Botons en fila que es poden embolcar
+   ============================================ */
+
+.category-filters {
+  /* Contenidor dels filtres */
+}
+
+.filters {
+  /* Usa display: flex, gap i flex-wrap */
+}
+
+.filter-btn {
+  /* Estils dels botons de filtre */
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  /* Efecte hover i estat actiu */
+}
+
+
+/* ============================================
+   GRID DE PLATS AMB FLEXBOX
+   Cards organitzades amb flex-wrap
+   ============================================ */
+
+.menu-section {
+  /* Contenidor de cada secció */
+}
+
+.dishes-grid {
+  /* Usa display: flex, flex-wrap i gap */
+  /* Les cards s'han d'organitzar en múltiples files */
+}
+
+.dish-card {
+  /* Usa flex: 1 1 300px per responsive automàtic */
+  /* Cada card ha de tenir display: flex i flex-direction: column */
+}
+
+.dish-card:hover {
+  /* Efecte hover */
+}
+
+
+/* ============================================
+   CONTINGUT INTERN DE LA CARD AMB FLEXBOX
+   Organitza la info dins de cada card
+   ============================================ */
+
+.dish-image {
+  /* Espai per la imatge (o color de fons) */
+}
+
+.dish-info {
+  /* Usa display: flex i flex-direction: column */
+}
+
+.dish-header {
+  /* Usa display: flex i justify-content: space-between */
+  /* Per posar nom i preu en la mateixa línia */
+}
+
+.dish-name {
+  /* Estils del nom del plat */
+}
+
+.dish-price {
+  /* Estils del preu */
+}
+
+.dish-description {
+  /* Estils de la descripció */
+  /* Usa flex-grow: 1 per ocupar espai disponible */
+}
+
+.dish-allergens {
+  /* Usa display: flex, gap i flex-wrap */
+}
+
+.allergen-badge {
+  /* Estils dels badges d'al·lèrgens */
+}
+
+
+/* ============================================
+   SECCIÓ DE BEGUDES AMB FLEXBOX
+   Layout horitzontal diferent
+   ============================================ */
+
+.drinks-section {
+  /* Contenidor de begudes */
+}
+
+.drinks-list {
+  /* Usa display: flex i overflow-x: auto per scroll horitzontal */
+}
+
+.drink-card {
+  /* Usa flex: 0 0 250px per mida fixa */
+  /* Usa display: flex i flex-direction: row per layout horitzontal */
+}
+
+.drink-icon {
+  /* Estils de l'icona */
+}
+
+.drink-info {
+  /* Info de la beguda */
+}
+
+.drink-name {
+  /* Estils del nom */
+}
+
+.drink-price {
+  /* Estils del preu */
+}
+
+
+/* ============================================
+   FOOTER AMB FLEXBOX
+   Distribució d'elements
+   ============================================ */
+
+footer {
+  /* Estils del footer */
+}
+
+.footer-content {
+  /* Usa display: flex i justify-content: space-between */
+}
+
+.footer-info {
+  /* Info del footer */
+}
+
+.footer-social {
+  /* Xarxes socials amb Flexbox */
+}
+
+.social-link {
+  /* Estils dels links socials */
+}
+
+.social-link:hover {
+  /* Efecte hover */
+}
+
+
+/* ============================================
+   RESPONSIVE AMB FLEXBOX
+   Media queries per tablets i mòbils
+   ============================================ */
+
+/* Tablets i pantalles mitjanes */
+@media (max-width: 768px) {
+  /* Adapta la navegació */
+  nav {
+    /* Canvia a flex-direction: column si cal */
+  }
+  
+  .nav-menu {
+    /* Adapta el menu */
+  }
+  
+  /* Adapta el hero */
+  .hero h1 {
+    /* Redueix la mida de la font */
+  }
+  
+  /* Adapta les cards */
+  .dish-card {
+    /* Assegura't que ocupen més amplada */
+  }
+  
+  /* Adapta el footer */
+  .footer-content {
+    /* Canvia a columna si cal */
+  }
+}
+
+/* Mòbils petits */
+@media (max-width: 480px) {
+  /* Ajustos finals per mòbils petits */
+  
+  .filter-btn {
+    /* Redueix mida */
+  }
+  
+  .dish-header {
+    /* Apila nom i preu si cal */
+  }
+}

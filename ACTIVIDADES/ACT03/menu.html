@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nom del Restaurant] - Menú Digital</title>
+    
+    <!-- Afegeix aquí el teu link de Google Fonts (mateix de l'Act 2) -->
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER AMB NAVEGACIÓ -->
+    <header>
+        <nav>
+            <div class="logo">[Nom Restaurant]</div>
+            <ul class="nav-menu">
+                <li><a href="#inici">Inici</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#begudes">Begudes</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inici" class="hero">
+        <h1>La nostra carta</h1>
+        <p>Descobreix els nostres plats preparats amb ingredients frescos i locals</p>
+    </section>
+
+    <!-- FILTRES DE CATEGORIA -->
+    <section class="category-filters">
+        <div class="filters">
+            <button class="filter-btn active" data-category="tots">Tots</button>
+            <button class="filter-btn" data-category="entrants">Entrants</button>
+            <button class="filter-btn" data-category="principals">Principals</button>
+            <button class="filter-btn" data-category="postres">Postres</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓ D'ENTRANTS -->
+    <section id="menu" class="menu-section">
+        <h2>Entrants</h2>
+        <div class="dishes-grid">
+            <!-- Card 1 -->
+            <div class="dish-card" data-category="entrants">
+                <div class="dish-image">
+                    <!-- Pots afegir una imatge o deixar-ho amb color de fons -->
+                </div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 1]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Gluten</span>
+                        <span class="allergen-badge">Lactosa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="dish-card" data-category="entrants">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 2]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Fruits secs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="dish-card" data-category="entrants">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 3]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Vegà</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓ DE PLATS PRINCIPALS -->
+    <section class="menu-section">
+        <h2>Plats Principals</h2>
+        <div class="dishes-grid">
+            <!-- Card 1 -->
+            <div class="dish-card" data-category="principals">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 1]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Peix</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="dish-card" data-category="principals">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 2]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Carn</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="dish-card" data-category="principals">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 3]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Vegetarià</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="dish-card" data-category="principals">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 4]</h3>
+                        <span class="dish-price">[XX.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada del plat amb ingredients principals]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Marisco</span>
+                        <span class="allergen-badge">Lactosa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓ DE POSTRES -->
+    <section class="menu-section">
+        <h2>Postres</h2>
+        <div class="dishes-grid">
+            <!-- Card 1 -->
+            <div class="dish-card" data-category="postres">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 1]</h3>
+                        <span class="dish-price">[X.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada de la postres]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Gluten</span>
+                        <span class="allergen-badge">Ou</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="dish-card" data-category="postres">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 2]</h3>
+                        <span class="dish-price">[X.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada de la postres]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Lactosa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="dish-card" data-category="postres">
+                <div class="dish-image"></div>
+                <div class="dish-info">
+                    <div class="dish-header">
+                        <h3 class="dish-name">[Nom del plat 3]</h3>
+                        <span class="dish-price">[X.XX]€</span>
+                    </div>
+                    <p class="dish-description">
+                        [Descripció detallada de la postres]
+                    </p>
+                    <div class="dish-allergens">
+                        <span class="allergen-badge">Sense gluten</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓ DE BEGUDES -->
+    <section id="begudes" class="drinks-section">
+        <h2>Begudes</h2>
+        <div class="drinks-list">
+            <!-- Beguda 1 -->
+            <div class="drink-card">
+                <div class="drink-icon">🍷</div>
+                <div class="drink-info">
+                    <h3 class="drink-name">[Nom beguda 1]</h3>
+                    <p class="drink-description">[Descripció breu]</p>
+                    <span class="drink-price">[X.XX]€</span>
+                </div>
+            </div>
+
+            <!-- Beguda 2 -->
+            <div class="drink-card">
+                <div class="drink-icon">🍺</div>
+                <div class="drink-info">
+                    <h3 class="drink-name">[Nom beguda 2]</h3>
+                    <p class="drink-description">[Descripció breu]</p>
+                    <span class="drink-price">[X.XX]€</span>
+                </div>
+            </div>
+
+            <!-- Beguda 3 -->
+            <div class="drink-card">
+                <div class="drink-icon">🥤</div>
+                <div class="drink-info">
+                    <h3 class="drink-name">[Nom beguda 3]</h3>
+                    <p class="drink-description">[Descripció breu]</p>
+                    <span class="drink-price">[X.XX]€</span>
+                </div>
+            </div>
+
+            <!-- Beguda 4 -->
+            <div class="drink-card">
+                <div class="drink-icon">☕</div>
+                <div class="drink-info">
+                    <h3 class="drink-name">[Nom beguda 4]</h3>
+                    <p class="drink-description">[Descripció breu]</p>
+                    <span class="drink-price">[X.XX]€</span>
+                </div>
+            </div>
+
+            <!-- Beguda 5 -->
+            <div class="drink-card">
+                <div class="drink-icon">🍹</div>
+                <div class="drink-info">
+                    <h3 class="drink-name">[Nom beguda 5]</h3>
+                    <p class="drink-description">[Descripció breu]</p>
+                    <span class="drink-price">[X.XX]€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacte">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 [Nom Restaurant]. Tots els drets reservats.</p>
+                <p>Adreça: [Carrer fictici, número, ciutat]</p>
+                <p>Tel: [XXX XXX XXX] | Email: [info@restaurant.cat]</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                <a href="#" class="social-link" aria-label="Facebook">👍</a>
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
