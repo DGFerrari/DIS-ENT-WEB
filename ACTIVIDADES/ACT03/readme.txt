@@ -33,24 +33,24 @@ FASE 2: VARIABLES CSS
   ✓ Verifica que els colors i fonts són correctes
 
 FASE 3: IMPLEMENTACIÓ FLEXBOX 
-  □ Tasca 2: Navegació amb Flexbox 
-  □ Tasca 3: Hero amb Flexbox 
-  □ Tasca 4: Filtres amb Flexbox 
-  □ Tasca 5: Grid de plats amb Flexbox 
-  □ Tasca 6: Cards internes amb Flexbox 
-  □ Tasca 7: Begudes amb Flexbox
-  □ Tasca 8: Footer amb Flexbox 
+  ✓ Tasca 2: Navegació amb Flexbox 
+  ✓ Tasca 3: Hero amb Flexbox 
+  ✓ Tasca 4: Filtres amb Flexbox 
+  ✓ Tasca 5: Grid de plats amb Flexbox 
+  ✓ Tasca 6: Cards internes amb Flexbox 
+  ✓ Tasca 7: Begudes amb Flexbox
+  ✓ Tasca 8: Footer amb Flexbox 
 
 FASE 4: RESPONSIVE
-  □ Tasca 9: Media queries per tablets i mòbils
-  □ Prova amb DevTools en diferents mides
-  □ Assegura't que tot funciona en 320px, 768px i 1920px
+  ✓ Tasca 9: Media queries per tablets i mòbils
+  ✓ Prova amb DevTools en diferents mides
+  ✓ Assegura't que tot funciona en 320px, 768px i 1920px
 
 FASE 5: POLIMENT
-  □ Tasca 10: Verifica que TOT usa Flexbox
-  □ Comprova hover effects
-  □ Valida HTML i CSS
-  □ Afegeix comentaris finals
+  ✓ Tasca 10: Verifica que TOT usa Flexbox
+  ✓ Comprova hover effects
+  ✓ Valida HTML i CSS
+  ✓ Afegeix comentaris finals
 
 
 ESTRUCTURA HTML PROPORCIONADA:
@@ -100,20 +100,20 @@ Elements flex:
 
 CHECKLIST ABANS DE LLIURAR:
 ----------------------------
-□ Tots els textos personalitzats (no [corxets])
-□ Variables CSS copiades de l'Act 2
-□ Google Fonts afegit al <head>
-□ Navegació usa Flexbox (logo esquerra, menu dreta)
-□ Hero usa Flexbox (contingut centrat)
-□ Filtres usen Flexbox (botons en fila)
-□ Grid de plats usa Flexbox amb flex-wrap
-□ Cards internes usen Flexbox
-□ Begudes usen Flexbox (layout horitzontal)
-□ Footer usa Flexbox
-□ Responsive funciona (provat amb DevTools)
-□ HTML validat (W3C Validator)
-□ CSS validat (W3C CSS Validator)
-□ Document reflexiu completat
+✓ Tots els textos personalitzats (no [corxets])
+✓ Variables CSS copiades de l'Act 2
+✓ Google Fonts afegit al <head>
+✓ Navegació usa Flexbox (logo esquerra, menu dreta)
+✓ Hero usa Flexbox (contingut centrat)
+✓ Filtres usen Flexbox (botons en fila)
+✓ Grid de plats usa Flexbox amb flex-wrap
+✓ Cards internes usen Flexbox
+✓ Begudes usen Flexbox (layout horitzontal)
+✓ Footer usa Flexbox
+✓ Responsive funciona (provat amb DevTools)
+✓ HTML validat (W3C Validator)
+✓ CSS validat (W3C CSS Validator)
+✓ Document reflexiu completat
 
 
 RECURSOS ÚTILS:
