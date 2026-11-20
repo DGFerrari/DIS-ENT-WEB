@@ -8,7 +8,15 @@
    ============================================ */
 
 :root {
-  
+  --primary-color: #121216;
+  --secondary-color: #2B3542;
+  --accent-color: #D32F2F;
+  --background-color: #19191f;
+  --surface-color: #24242c;
+  --text-color: #f5f0e6;
+  --muted-color: #c5bdaf;
+  --gold-color: #f2b84b;
+  --content-width: 1100px;
 }
 
 
@@ -39,19 +47,29 @@ a {
    ============================================ */
 
 h1 {
- 
+  color: var(--gold-color);
+  font-family: 'Fugaz One', cursive;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.15;
 }
 
 h2 {
-  
+  font-family: 'Carter One', cursive;
+  line-height: 1.25;
 }
 
 h3 {
-
+  font-family: 'Carter One', cursive;
+  line-height: 1;
 }
 
-p {
-
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 /* ============================================
@@ -61,30 +79,60 @@ p {
 
 header {
   /* Afegeix els teus estils aquí */
+  display: flex;
+  background-color: var(--accent-color);
+  border-bottom: 4px solid var(--gold-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav {
   /* Usa display: flex i justify-content per distribuir logo i menu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
 }
 
 .logo {
   /* Estilitza el logo */
+  font-family: 'Fugaz One', cursive;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav-menu {
   /* Usa display: flex per organitzar els links en fila */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .nav-menu li {
   /* Espaiat entre links */
+  padding: 0 0.25rem;
 }
 
 .nav-menu a {
   /* Estils dels links */
+  display: block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-menu a:hover {
   /* Efecte hover */
+  background-color: var(--primary-color);
+  color: var(--gold-color);
 }
 
 
@@ -95,14 +143,29 @@ nav {
 
 .hero {
   /* Usa display: flex i justify-content/align-items per centrar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 55vh;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(18, 18, 22, 0.65), rgba(18, 18, 22, 0.85)),
+    var(--secondary-color);
 }
 
 .hero h1 {
   /* Estils del títol */
+  text-shadow: 2px 3px 0 var(--accent-color);
 }
 
 .hero p {
   /* Estils del paràgraf */
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: var(--muted-color);
 }
 
 
@@ -113,19 +176,38 @@ nav {
 
 .category-filters {
   /* Contenidor dels filtres */
+  padding: 2rem 1.5rem 0.5rem;
 }
 
 .filters {
   /* Usa display: flex, gap i flex-wrap */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .filter-btn {
   /* Estils dels botons de filtre */
+  padding: 0.6rem 1.4rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
   /* Efecte hover i estat actiu */
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  transform: translateY(-2px);
 }
 
 
@@ -136,20 +218,46 @@ nav {
 
 .menu-section {
   /* Contenidor de cada secció */
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.menu-section h2,
+.drinks-section h2 {
+  margin-bottom: 1.5rem;
+  padding-left: 0.8rem;
+  border-left: 6px solid var(--accent-color);
+  font-size: 2rem;
+  color: var(--gold-color);
 }
 
 .dishes-grid {
   /* Usa display: flex, flex-wrap i gap */
   /* Les cards s'han d'organitzar en múltiples files */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .dish-card {
   /* Usa flex: 1 1 300px per responsive automàtic */
   /* Cada card ha de tenir display: flex i flex-direction: column */
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--surface-color);
+  border: 1px solid var(--secondary-color);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .dish-card:hover {
   /* Efecte hover */
+  transform: translateY(-6px);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 20px rgba(211, 47, 47, 0.35);
 }
 
 
@@ -160,36 +268,67 @@ nav {
 
 .dish-image {
   /* Espai per la imatge (o color de fons) */
+  height: 160px;
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 }
 
 .dish-info {
   /* Usa display: flex i flex-direction: column */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.8rem;
+  padding: 1.2rem;
 }
 
 .dish-header {
   /* Usa display: flex i justify-content: space-between */
   /* Per posar nom i preu en la mateixa línia */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .dish-name {
   /* Estils del nom del plat */
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--text-color);
 }
 
 .dish-price {
   /* Estils del preu */
+  font-family: 'Carter One', cursive;
+  font-size: 1.2rem;
+  color: var(--gold-color);
+  white-space: nowrap;
 }
 
 .dish-description {
   /* Estils de la descripció */
   /* Usa flex-grow: 1 per ocupar espai disponible */
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: var(--muted-color);
 }
 
 .dish-allergens {
   /* Usa display: flex, gap i flex-wrap */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .allergen-badge {
   /* Estils dels badges d'al·lèrgens */
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+  color: var(--gold-color);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 
@@ -200,31 +339,74 @@ nav {
 
 .drinks-section {
   /* Contenidor de begudes */
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
 }
 
 .drinks-list {
   /* Usa display: flex i overflow-x: auto per scroll horitzontal */
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
 }
 
 .drink-card {
   /* Usa flex: 0 0 250px per mida fixa */
   /* Usa display: flex i flex-direction: row per layout horitzontal */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 250px;
+  padding: 1rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--accent-color);
+  background-color: var(--surface-color);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.drink-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--secondary-color);
 }
 
 .drink-icon {
   /* Estils de l'icona */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  font-size: 1.8rem;
 }
 
 .drink-info {
   /* Info de la beguda */
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .drink-name {
   /* Estils del nom */
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.drink-description {
+  font-size: 0.85rem;
+  color: var(--muted-color);
 }
 
 .drink-price {
   /* Estils del preu */
+  font-weight: bold;
+  color: var(--gold-color);
 }
 
 
@@ -235,26 +417,54 @@ nav {
 
 footer {
   /* Estils del footer */
+  margin-top: 2rem;
+  padding: 2rem 1.5rem;
+  background-color: var(--primary-color);
+  border-top: 4px solid var(--accent-color);
 }
 
 .footer-content {
   /* Usa display: flex i justify-content: space-between */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .footer-info {
   /* Info del footer */
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--muted-color);
 }
 
 .footer-social {
   /* Xarxes socials amb Flexbox */
+  display: flex;
+  gap: 0.8rem;
 }
 
 .social-link {
   /* Estils dels links socials */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .social-link:hover {
   /* Efecte hover */
+  background-color: var(--gold-color);
+  transform: scale(1.1);
 }
 
 
@@ -268,25 +478,37 @@ footer {
   /* Adapta la navegació */
   nav {
     /* Canvia a flex-direction: column si cal */
+    flex-direction: column;
+    gap: 0.6rem;
   }
   
   .nav-menu {
     /* Adapta el menu */
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   /* Adapta el hero */
   .hero h1 {
     /* Redueix la mida de la font */
+    font-size: 2.2rem;
   }
   
   /* Adapta les cards */
   .dish-card {
     /* Assegura't que ocupen més amplada */
+    flex: 1 1 100%;
   }
   
   /* Adapta el footer */
   .footer-content {
     /* Canvia a columna si cal */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    align-items: center;
   }
 }
 
@@ -296,9 +518,14 @@ footer {
   
   .filter-btn {
     /* Redueix mida */
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
   }
   
   .dish-header {
     /* Apila nom i preu si cal */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
   }
 }

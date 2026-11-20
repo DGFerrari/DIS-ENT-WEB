@@ -20,17 +20,17 @@ PASSOS A SEGUIR:
 ----------------
 
 FASE 1: PREPARACIÓ 
-  □ Obre menu.html i personalitza tots els textos [entre corxets]
-  □ Afegeix els teus plats (mínim 3 per categoria)
-  □ Afegeix preus realistes
-  □ Canvia les begudes segons el teu restaurant
-  □ Copia el link de Google Fonts de l'Act 2 al <head>
+  ✓ Obre menu.html i personalitza tots els textos [entre corxets]
+  ✓ Afegeix els teus plats (mínim 3 per categoria)
+  ✓ Afegeix preus realistes
+  ✓ Canvia les begudes segons el teu restaurant
+  ✓ Copia el link de Google Fonts de l'Act 2 al <head>
 
 FASE 2: VARIABLES CSS 
-  □ Obre el styles.css de l'Activitat 2
-  □ Copia tot el bloc :root { ... } amb les teves variables
-  □ Enganxa-les al styles.css de l'Act 3
-  □ Verifica que els colors i fonts són correctes
+  ✓ Obre el styles.css de l'Activitat 2
+  ✓ Copia tot el bloc :root { ... } amb les teves variables
+  ✓ Enganxa-les al styles.css de l'Act 3
+  ✓ Verifica que els colors i fonts són correctes
 
 FASE 3: IMPLEMENTACIÓ FLEXBOX 
   □ Tasca 2: Navegació amb Flexbox 
